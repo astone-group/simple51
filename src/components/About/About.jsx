@@ -25,41 +25,31 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="ABOUT US" />
         <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+          <Col md={3} sm={6}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
-              </div>
+             
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="40px">
+            <div className="contact-wrapper__info">
+                <p className="contact-wrapper__info-text" align="center"><strong>
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    ''}</strong> is a specialist Organisational Development and Business Psychology consultancy based in Melbourne, Australia.
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className="about-wrapper__info-text"><strong>
                   {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    ''}</strong> with our clients to develop tailored, expert solutions across Assessment, Leadership Coaching & Development, Team Performance, Wellbeing and Career Alignment, that are plugged into and aligned to your strategy.
                 </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                <p className="about-wrapper__info-text"><strong>
+                  {paragraphThree || ''}</strong> that awesome teams and organisational cultures are best built by attending effectively, thoughtfully, and persistently to these elements.
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
+               
+              </div>
+              <div className="about-wrapper__image">
+                <AboutImg alt="profile picture" filename={img} align="center"/>
               </div>
             </Fade>
           </Col>
