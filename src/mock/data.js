@@ -11,13 +11,13 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'ASTONE.',
-  subtitle: 'Partnering with you to develop leaders, teams and organisations to do great things, and to have more fun doing it.',
+  subtitle: 'Partnering with you to develop leaders, teams and organisations.',
   cta: 'Learn more',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile2.png',
+  img: 'profile6.png',
   paragraphOne: 'ASTONE Melbourne',
   paragraphTwo: 'We partner',
   paragraphThree: 'We believe',
@@ -30,8 +30,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'Psychometric.png',
     title: 'Psychometric Assessment',
-    info: 'We know that psychometric assessment data is one of the most powerful ways of predicting job performance and culture fit.',
-    info2: 'We help you to make sense of this data and to increase your liklihood of making a good hire by integrating assessment data with other methods of selection (and your gut feel), and to plan and craft your next stages of interview, reference checks and on-boarding.',
+    info: 'Effective use of psychometric assessment data is one of the most powerful ways of predicting job performance.  We work with you to make sense of this data, to integrate the outputs with other methods of selection (and your gut feel), and to plan and craft further stages of your hiring and onboarding process.',
+    info2: 'Increase your likelihood of making a great hire, and ensure a great candidate experience along the way.',
     
   },
   {
