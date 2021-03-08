@@ -38,7 +38,7 @@ const Projects = () => {
             </Fade>
         
           {projects.map((project) => {
-            const { title, title2, title3, title4, title5, title6, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -52,14 +52,8 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <h3 className="project-wrapper__text-title">{title2 || 'Project Title'}</h3>
-                      <h3 className="project-wrapper__text-title">{title3 || 'Project Title'}</h3>
-                      <h3 className="project-wrapper__text-title">{title4 || 'Project Title'}</h3>
-                      <h3 className="project-wrapper__text-title">{title5 || 'Project Title'}</h3>
-                      <h3 className="project-wrapper__text-title">{title6 || 'Project Title'}</h3>
                       <div>
-
-                         <p>
+                        <p>
                           {info ||
                             ' '}
                         </p>
@@ -67,6 +61,16 @@ const Projects = () => {
                       </div>
                       
 
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo}
+                        >
+                          Source Code
+                        </a>
+                      )}
                     </div>
                   </Fade>
                 </Col>

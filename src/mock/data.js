@@ -30,10 +30,16 @@ export const projectsData = [
     id: nanoid(),
     img: 'Psychometric.png',
     title: 'Psychometric Assessment',
-    info: 'Effective use of psychometric assessment data is one of the most powerful ways of predicting job performance.  We work with you to make sense of this data, to integrate the outputs with other methods of selection (and your gut feel), and to plan and craft further stages of your hiring and onboarding process.',
-    info2: 'Increase your likelihood of making a great hire, and ensure a great candidate experience along the way.',
+    title2: 'Leadership Coaching and Development',
+    title3: 'Team Performance and Dynamics',
+    title4: '360s // Assessments for Development',
+    title5: 'Wellbeing',
+    title6: 'Career Alignment and Transition',
+    info: 'If you are interested in the work that we do and you have something in mind or a current challenge, even something small, we are happy to chat and to help you however we can 🖤', 
     
   },
+
+  /* 
   {
     id: nanoid(),
     img: 'Assessment2.png',
@@ -73,9 +79,10 @@ export const projectsData = [
     info: 'We believe in the potential for growth and development within all of us, including the great leaders among us.',
     info2: 'Leadership coaching is a high impact and high accountability approach to developing an individual\'s personal leadership capability, and embed new and helpful behaviours that will maintain a virtuous, upward spiral. This almost always begins with honest self-reflective, personal insights, and an exploration of the individual why.',
     url: 'e',
-      },
+      }, */
                   
-    ];
+    ];  
+    
 
 // CONTACT DATA
 export const contactData = {

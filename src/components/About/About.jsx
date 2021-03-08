@@ -43,7 +43,7 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text"><strong>
                   {paragraphTwo ||
-                    ''}</strong> with our clients to develop tailored, expert solutions across Assessment, Leadership Coaching & Development, Team Performance, Wellbeing and Career Alignment, that are plugged into and aligned to your strategy.
+                    ''}</strong> with our clients to develop tailored, expert solutions across Assessment, Leadership Coaching & Development, Team Performance, Wellbeing and Career Alignment, that are plugged into and aligned with your strategy.
                 </p>
                 <p className="about-wrapper__info-text"><strong>
                   {paragraphThree || ''}</strong> that awesome teams and organisational cultures are best built by attending effectively, thoughtfully, and persistently to these elements.
@@ -51,25 +51,8 @@ const About = () => {
                
               </div>
               <div className="about-wrapper__image"> 
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
                            <AboutImg alt="profile picture" filename={img} align="center"/>
                           </div>
-                        </Tilt>
-                      
-                      </div>
               </Fade>
           </Col>
         </Row>
