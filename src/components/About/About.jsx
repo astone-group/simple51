@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import Tilt from 'react-tilt';
+
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -48,10 +50,27 @@ const About = () => {
                 </p>
                
               </div>
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} align="center"/>
-              </div>
-            </Fade>
+              <div className="about-wrapper__image"> 
+                        <Tilt
+                          options={{
+                            reverse: false,
+                            max: 8,
+                            perspective: 1000,
+                            scale: 1,
+                            speed: 300,
+                            transition: true,
+                            axis: null,
+                            reset: true,
+                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                          }}
+                        >
+                          <div data-tilt className="thumbnail rounded">
+                           <AboutImg alt="profile picture" filename={img} align="center"/>
+                          </div>
+                        </Tilt>
+                      
+                      </div>
+              </Fade>
           </Col>
         </Row>
       </Container>
